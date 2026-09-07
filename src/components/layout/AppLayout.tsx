@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 export interface NavItem {
   label: string;
-  to: LinkProps["to"];
+  to: NonNullable<LinkProps["to"]>;
   icon: LucideIcon;
 }
 
