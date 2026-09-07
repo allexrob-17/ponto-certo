@@ -1,4 +1,4 @@
-import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
+import { Link, useNavigate, useRouterState, type LinkProps } from "@tanstack/react-router";
 import { LogOut, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
 
@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 export interface NavItem {
   label: string;
-  to: string;
+  to: LinkProps["to"];
   icon: LucideIcon;
 }
 
